@@ -1,0 +1,117 @@
+
+/* Spring */
+.Spring-bg{
+    background-image: url(Assets/spring-bg.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.Spring-tree{
+
+}
+
+.Spring-ground{
+
+}
+
+.Spring-particles{
+
+}
+
+@keyframes particles{
+    0%{
+        opacity: 0;
+        transform: translateX(), translateY();
+    }
+
+    20%{
+        opacity: 1;
+        transform: translateX(), translateY();
+    }
+
+    60%, 80% {
+        opacity: 1;
+    }
+
+    60%{
+        transform: translateX(), translateY();
+    }
+
+    80%{
+        transform: translateX(), translateY();
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(), translateY();
+    }
+}
+
+.Spring-nav{
+
+}
+
+.Spring-nav:hover{
+    transition: 1s ease-out;
+    opacity: 1;
+}
+
+/* Summer */
+
+.Summer-bg{
+    background-image: url(Assets/summer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Summer-tree{
+
+}
+
+.Summer-ground{
+
+}
+
+.Summer-nav{
+
+}
+
+/* Fall */
+.Fall-bg{
+    background-image: url(Assets/autumn-bg.png);
+    background-repeat: none;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Fall-tree{
+
+}
+
+.Fall-ground{
+
+}
+
+.Fall-nav{
+
+}
+
+/* Winter */
+.Winter-bg{
+    background-image: url(Assets/winter-bg.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.Winter-tree{
+
+}
+
+.Winter-ground{
+}
+
+.Winter-nav{
+
+}
+  

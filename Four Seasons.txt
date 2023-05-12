@@ -1,0 +1,14 @@
+Proposal #2: Four Seasons
+Theme: Website animation
+
+Description: 
+Our website is where we showcase the beauty of nature through CSS animation. Our site features a display of the four seasons: spring, summer, autumn, and winter. 
+The website features an engaging and interactive design that captures the essence of each season through stunning visuals and animations.
+
+Features / Function: (Tentative)
+
+Four seasons animation: The website's main feature is an impressive CSS animation that transitions smoothly between the four seasons. Users can watch as leaves fall from trees during autumn, snowflakes gently land on the ground in winter, flowers bloom in spring, and the sun shines brightly in summer.
+
+Audio/Sound Effects: The website features unique audio and background music for each season, adding to the immersive experience. Sounds like snow crunching and birds chirping match the respective seasons, while upbeat music plays during summer and soothing sounds during autumn. Users can turn off audio if they prefer.
+
+Responsive layout: The website's responsive design ensures it can be accessed and viewed on any device, from desktop computers to mobile phones

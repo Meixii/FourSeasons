@@ -1,0 +1,69 @@
+*{
+    overflow: hidden;
+}
+
+/* Main Logo */
+
+.main-logo{
+    position: absolute;
+    max-height: 50%;
+    max-width: 50%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
+    transition: 1.5s;
+    opacity: 1;
+
+}
+
+.main-logo:hover {
+    box-shadow: 0 0 18px 18px rgba(30, 62, 119, 0.75);
+    max-height: 48%;
+    max-width: 48%;
+    transition: .5s;
+}
+
+.main-logo-shrink img{
+    z-index: 3;
+    animation: shrink 1.5s forwards;
+}
+
+@keyframes shrink{
+    from{
+        box-shadow: 0 0 18px 7px rgba(164, 193, 242, 0.75);
+    }
+    to {
+        opacity: 0;
+        box-shadow: 0 0 1000px 1000px rgb(255, 255, 255);
+    }
+}
+
+.navBar {
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+}
+
+/* Main */
+a {
+    text-decoration: none;
+    text-align: justify;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      margin-bottom: 10px;
+    }
+  }
+

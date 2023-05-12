@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer | Four Seasons</title>
+    <link rel="icon" type="image/png" href="Assets/summer-preview.png">
+    <link rel="stylesheet" href="css/seasons.css">
+    <link rel="stylesheet" href="css/homeStyles.css">
+</head>
+<body>
+
+    <nav class="navBar">
+        <ul>
+        <li class="Home-nav"><a href="home.html">Home</a></li>
+        <li class="Spring-nav"><a href="spring.html">Spring</a></li>
+        <li class="active"><a href="javascript:void()">Summer</a></li>
+        <li class="Fall-nav"><a href="autumn.html">Autumn</a></li>
+        <li class="Winter-nav"><a href="winter.html">Winter</a></li>
+        <li class="About-nav"><a href="aboutUs.html">About Us</a></li>
+        
+        </ul>
+    </nav>
+
+    <audio id="audio" autoplay hidden loop>
+		<source src="Assets/bgm/summer-bgm.mp3" type="audio/mpeg">
+	</audio>
+	<img id="mute-button" src="Assets/sound.png">
+
+    <script>
+        var audio = document.getElementById("audio");
+        var muteButton = document.getElementById("mute-button");
+        var fadeInInterval;
+
+        muteButton.addEventListener("click", function() {
+            if (audio.muted) {
+                audio.muted = false;
+                muteButton.src = "Assets/sound.png";
+            } else {
+                audio.muted = true;
+                muteButton.src = "Assets/no-sound.png";
+            }
+        });
+    </script>
+
+</body>
+</html>
