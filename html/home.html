@@ -20,29 +20,7 @@
             <li class="About-nav"><a href="aboutUs.html">About Us</a></li>
         </ul>
     </nav>    
-    
-    <!-- BGM -->
-    <audio id="audio" autoplay hidden loop>
-		<source src="Assets/bgm/home-bgm.mp3" type="audio/mpeg">
-	</audio>
 
-    <img id="mute-button" src="Assets/sound.png">
-
-    <script>
-        var audio = document.getElementById("audio");
-        var muteButton = document.getElementById("mute-button");
-
-        muteButton.addEventListener("click", function() {
-            if (audio.muted) {
-                audio.muted = false;
-                muteButton.src = "Assets/sound.png";
-            } else {
-                audio.muted = true;
-                muteButton.src = "Assets/no-sound.png";
-            }
-        });
-    </script>
-      
     <!-- Title -->
     <div class="headings">
         <div class="firsthead">the <span class="title1 auto-type4"></span></div>
@@ -144,6 +122,30 @@
         });
 
     </script>
+
+        
+    <!-- BGM -->
+    <audio id="audio" autoplay hidden loop>
+		<source src="Assets/bgm/home-bgm.mp3" type="audio/mpeg">
+	</audio>
+    <a href="../index.html" id="start"><img src="Assets/main-logo.png"></a>
+    <img id="mute-button" src="Assets/sound.png">
+
+    <script>
+        var audio = document.getElementById("audio");
+        var muteButton = document.getElementById("mute-button");
+
+        muteButton.addEventListener("click", function() {
+            if (audio.muted) {
+                audio.muted = false;
+                muteButton.src = "Assets/sound.png";
+            } else {
+                audio.muted = true;
+                muteButton.src = "Assets/no-sound.png";
+            }
+        });
+    </script>
+      
 
 </body>
 </html>

@@ -12,6 +12,18 @@ body {
   background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 0);
   background-size: 40px 40px;
   background-position: -19px -19px;
+  animation: fadeInAnimation ease 1.1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 .hero{
