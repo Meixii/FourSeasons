@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homeStyles.css">
     <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/nav.css">
     <title>About Us | Four Seasons</title>
     <link rel="icon" type="image/png" href="Assets/main-logo.png">
 </head>
@@ -22,20 +23,41 @@
         </ul>
     </nav>
 
+    <audio id="audio" autoplay hidden loop>
+        <source src="Assets/bgm/about-bgm.mp3" type="audio/mpeg">
+    </audio>
+
+    <img id="mute-button" src="Assets/sound.png">
+
+    <script>
+        var audio = document.getElementById("audio");
+        var muteButton = document.getElementById("mute-button");
+
+        muteButton.addEventListener("click", function() {
+            if (audio.muted) {
+                audio.muted = false;
+                muteButton.src = "Assets/sound.png";
+            } else {
+                audio.muted = true;
+                muteButton.src = "Assets/no-sound.png";
+            }
+        });
+    </script>
+
     <!-- Title -->
     <div class="headings">
-        <div class="firsthead">the <span class="proggers">proggers</span></div>
-        <div class="sechead">Meet Our <span class="Team">Team</span></div>
+        <div class="firsthead">the <span class="proggers auto-type5"></span></div>
+        <div class="sechead">Meet Our <span class="Team auto-type6"></span></div>
     </div>
 
     <!-- Grid -->
     <div class="hero">
         <div class="person">
             <div class="container">
-              <div class="container-inner">
+            <div class="container-inner">
                 <img class="circle" src= "https://i.pinimg.com/236x/81/34/08/81340844a99a35cc7993166cbd9b5866.jpg">
                 <img class="img img1" src="Assets/mike.png">
-              </div>
+            </div>
             </div>
             <h1 class="name"><span class="auto-type"></span></h1>
             <div class="title">Member</div> 
@@ -43,10 +65,10 @@
 
         <div class="person">
             <div class="container">
-              <div class="container-inner">
+            <div class="container-inner">
                 <img class="circle" src="https://i.pinimg.com/236x/51/ff/65/51ff657c0086aa18963d200f98f266ca.jpg">           
                 <img class="img img2" src="Assets/kevin.png">
-              </div>
+            </div>
             </div>
             <h1 class="name"><span class="auto-type1"></span></h1>
             <div class="title">Member</div>
@@ -96,41 +118,43 @@
             typeSpeed: 150,
             backSpeed: 150
         });
-    </script>
 
-    <script>
         var typed = new Typed(".auto-type1", {
             strings: ["Kevin Llanes"],
             typeSpeed: 150,
             backSpeed: 150
         });
-    </script>
 
-    <script>
         var typed = new Typed(".auto-type2", {
             strings: ["Calvin Ramboyong"],
             typeSpeed: 150,
             backSpeed: 150
         });
-    </script>
 
-    <script>
         var typed = new Typed(".auto-type3", {
             strings: ["Lyniel Aya-ay"],
             typeSpeed: 150,
             backSpeed: 150
         });
-    </script>
 
-    <script>
         var typed = new Typed(".auto-type4", {
             strings: ["Bea Lugtu"],
             typeSpeed: 150,
             backSpeed: 150
         });
-    </script>
 
-      
+        var typed = new Typed(".auto-type5", {
+            strings: ["proggers"],
+            typeSpeed: 150,
+            backSpeed: 150
+        });
+
+        var typed = new Typed(".auto-type6", {
+            strings: ["Team"],
+            typeSpeed: 150,
+            backSpeed: 150
+        });
+    </script>
 
 </body>
 </html>

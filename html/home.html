@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Four Seasons</title>
     <link rel="stylesheet" href="css/homeStyles.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="icon" type="image/png" href="Assets/main-logo.png">
 </head>
-<body>
+<body class="main">
     <nav class="navBar">
         <ul>
             <li class="active"><a href="javascript:void()">Home</a></li>
@@ -18,12 +19,34 @@
             <li class="Winter-nav"><a href="winter.html">Winter</a></li>
             <li class="About-nav"><a href="aboutUs.html">About Us</a></li>
         </ul>
-    </nav>     
+    </nav>    
+    
+    <!-- BGM -->
+    <audio id="audio" autoplay hidden loop>
+		<source src="Assets/bgm/home-bgm.mp3" type="audio/mpeg">
+	</audio>
+
+    <img id="mute-button" src="Assets/sound.png">
+
+    <script>
+        var audio = document.getElementById("audio");
+        var muteButton = document.getElementById("mute-button");
+
+        muteButton.addEventListener("click", function() {
+            if (audio.muted) {
+                audio.muted = false;
+                muteButton.src = "Assets/sound.png";
+            } else {
+                audio.muted = true;
+                muteButton.src = "Assets/no-sound.png";
+            }
+        });
+    </script>
       
     <!-- Title -->
     <div class="headings">
-        <div class="firsthead">the <span class="title1">four</span></div>
-        <div class="sechead">awesome <span class="title2">Seasons</span></div>
+        <div class="firsthead">the <span class="title1 auto-type4"></span></div>
+        <div class="sechead">awesome <span class="title2 auto-type5"></span></div>
     </div>
 
     <!-- Grid -->
@@ -89,30 +112,37 @@
             typeSpeed: 350,
             backSpeed: 150
         });
-    </script>
-
-    <script>
+ 
         var typed = new Typed(".auto-type1", {
             strings: ["Summer"],
             typeSpeed: 190,
             backSpeed: 150
         });
-    </script>
 
-    <script>
         var typed = new Typed(".auto-type2", {
             strings: ["Autumn"],
             typeSpeed: 240,
             backSpeed: 150
         });
-    </script>
 
-    <script>
         var typed = new Typed(".auto-type3", {
             strings: ["Winter"],
             typeSpeed: 310,
             backSpeed: 150
         });
+
+        var typed = new Typed(".auto-type4", {
+            strings: ["four"],
+            typeSpeed: 620,
+            backSpeed: 380
+        });
+
+        var typed = new Typed(".auto-type5", {
+            strings: ["Seasons"],
+            typeSpeed: 410,
+            backSpeed: 150
+        });
+
     </script>
 
 </body>

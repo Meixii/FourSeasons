@@ -4,13 +4,6 @@
     Project Title: Four Seasons a Web Animation.
     Language: HTML5, CSS3, JavaScript
     Theme: Animation
-
-    Task:
-        - Opening Screen
-            - Space Themed
-            - Logo Button, when clicked: Animation will play for 3 seconds and will redirect into another webpage.
-        - Redirect to Homescreen
-
 -->
 
 <html lang="en">
@@ -30,6 +23,14 @@
         <img src="html/Assets/main-logo.png" alt="Zeven Logo" class="main-logo">
         </a>
     </div>
+
+    <!-- BGM -->
+    <audio id="audio" autoplay hidden loop>
+        <source src="html/Assets/bgm/opening-bgm.mp3" type="audio/mpeg">
+    </audio>
+
+    <img id="mute-button" src="html/Assets/sound.png">
+
     <script src="html/js/script.js"></script>
 </div>
 </body>
